@@ -16,5 +16,7 @@ namespace ADTaskManager.Model
         public int ActualLabor { get; set; }
         public DateTime RegistrationDate { get; set; }
         public DateTime ExecutionDate { get; set; }
+        public ICollection<ADTask> ChildTasks { get; set; }
+        public int ParentId { get; set; }
     }
 }
