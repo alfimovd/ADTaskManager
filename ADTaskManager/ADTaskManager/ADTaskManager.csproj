@@ -156,6 +156,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ADTaskController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -226,6 +227,11 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ADTask\Create.cshtml" />
+    <Content Include="Views\ADTask\Delete.cshtml" />
+    <Content Include="Views\ADTask\Details.cshtml" />
+    <Content Include="Views\ADTask\Edit.cshtml" />
+    <Content Include="Views\ADTask\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -233,6 +239,20 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADTaskManager.DB\ADTaskManager.DB.csproj">
+      <Project>{27a61760-e9f9-4355-b907-5c3a669a2f1f}</Project>
+      <Name>ADTaskManager.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADTaskManager.Model\ADTaskManager.Model.csproj">
+      <Project>{fbe347d0-4fbf-433e-9a6a-ca5676930424}</Project>
+      <Name>ADTaskManager.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mita.DataAccess\Mita.DataAccess.csproj">
+      <Project>{B86CC962-B1B9-4763-A348-DB88EF289853}</Project>
+      <Name>Mita.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

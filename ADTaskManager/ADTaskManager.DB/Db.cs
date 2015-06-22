@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using ADTaskManager.Model;
 
 namespace ADTaskManager.DB
@@ -12,6 +11,6 @@ namespace ADTaskManager.DB
     {
         public Db() : base("ADTaskManagerDb") { }
 
-        public IDbSet<ADTask> Tasks { get; set; }
+        public IDbSet<ADTask> ADTasks { get; set; }
     }
 }
